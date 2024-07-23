@@ -23,6 +23,7 @@
     
 
     .text{
+        margin-left: 50px;
         .heading{
             font-size: $headings;
             color: $second_font_color;
@@ -30,7 +31,7 @@
             font-weight: $bold;
 
             margin-right: 100px;
-            margin-left: 50px;
+
         }
         .subheading{
             font-size: $subheadings;

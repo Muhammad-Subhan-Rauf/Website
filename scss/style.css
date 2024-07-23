@@ -1158,13 +1158,15 @@
   position: relative;
   z-index: 47;
 }
+.section8 .text {
+  margin-left: 50px;
+}
 .section8 .text .heading {
   font-size: min(56px, 4vw);
   color: #333333;
   font-family: "BioRhyme", serif;
   font-weight: 700;
   margin-right: 100px;
-  margin-left: 50px;
 }
 .section8 .text .subheading {
   font-size: min(18px, 1.25vw);
