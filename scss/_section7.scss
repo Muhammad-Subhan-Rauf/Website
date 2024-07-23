@@ -1,0 +1,208 @@
+@import './fonts';
+@import './colors';
+
+.section7{
+    height: fit-content;
+    background-color: $secondary_color;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+    .text{
+
+        margin-top: 70px;
+        .subheading{
+            font-size: $subheadings;
+            color: $second_font_color;
+            font-family: $Sans;
+        }
+
+        .heading{
+            font-size: $headings;
+            font-family: $Bio;
+            color: $second_font_color;
+            font-weight: bold;
+
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 100px;
+
+        position: relative;
+        z-index: 47;
+        .card{
+
+            width: 25.7vw;
+            max-width: 370px;
+            margin-right: max(30px,2vw);
+            height: 464px;
+            border-radius: 20px;
+            background-color: $primary_color;
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+
+            .top_text{
+                // margin-top: 30px;
+                margin-left: min(30px, 2vw);
+                .heading{
+                    font-size: $bigger_heading;
+                    font-weight: $bold;
+                    color: $font_color;
+                    font-family: $Bio;
+                    text-align: left;
+                
+                    text-wrap: nowrap;
+                }
+                .subheading{
+                    font-size: $responsive_card_text;
+                    font-family: $Sans;
+                    color: $transparent_color_light;
+                    margin-top: -5px;
+                }
+            }
+
+
+            .bottom_text{
+                margin-left: min(30px, 2vw);
+                margin-bottom: min(30px, 2vw);
+                margin-right: min(30px, 2vw);
+                text-align: left;
+                .heading{
+                    font-size: $card_heading;
+                    font-family: $Bio;
+                    color: $font_color;
+                    font-weight: $bold;
+                }
+                .subheading{
+                    font-size: $card_text;
+                    font-family: $Sans;
+                    color: $font_color;
+                }
+            }
+
+
+            .dots{
+                height: 176px;
+                width: 176px;
+                
+                
+                position:absolute;
+                left: calc(100% - 115px);
+                top: calc(100% - 130px);
+                z-index: -100;
+                #dot{
+                    height: 176px;
+                    width: 176px;
+                    min-height: 176px;
+                    min-width: 176px;
+                    border-radius: 0px;
+                
+                }
+            }
+        }
+        .card:nth-child(3){
+            margin-right: 0px;
+        }
+
+        
+    }
+    .buttons{
+        
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        a{
+            text-decoration: none;
+            .button{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background-color: white;
+
+                color: $primary_color;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-size: 22px;
+                font-weight: $bold
+            }
+            .left{
+                @extend .button;
+                margin-right: 10px
+            }
+
+            .right{
+                @extend .button;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .section7{
+
+        .text{
+            .heading{
+                font-size: $responsive_headings;
+            }
+            .subheading{
+                font-size: $responsive_subheadings;
+            }
+        }
+        .cards{
+            .card{
+                width: 92vw;
+                margin-right: 0px;
+
+                .top_text{
+                    .heading{
+                        font-size: $bigger_responsive_heading;
+                    }
+                }
+
+                .bottom_text{
+                    .heading{
+                        font-size: $responsive_card_heading;
+                    }
+                    .subheading{
+                        font-size: $responsive_card_text;
+                    }
+                }
+
+                .dots{
+                    left: calc(100% - 160px);
+                    top: calc(100% - 130px);
+                }
+
+            }
+            .card:nth-child(1)
+            {
+                display: none;
+            }
+            .card:nth-child(2)
+            {
+                display: none;
+            }
+        }
+    }
+}

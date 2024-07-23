@@ -1,0 +1,86 @@
+@import './colors';
+@import './fonts';
+@import './progress'; 
+
+.section4{
+    height: 448px;
+    background-color: $third_bg_color;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    
+    
+    .circle_prog{
+        margin-right: 5.25vw;
+        margin-left: 5.25vw;
+        position: relative;
+        
+        
+
+        .percentage{
+
+            width: 170px;
+            height: 170px;
+
+            position: absolute;
+            left: 2%;
+            bottom: 3%; 
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: $responsive_headings;
+            font-family: $Bio;
+            font-weight: $bold;
+            color: $font_color;
+
+        }
+
+        .desc{
+
+            position: absolute;
+            width: 170px;
+            left: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: $responsive_card_heading;
+            font-family: $Bio;
+            font-weight: $bold;
+            color: $font_color;
+        }
+    }
+
+}
+
+@media screen and (max-width:1060px) {
+    .section4{
+        #four{
+            display: none;
+        }
+    }
+    
+}
+
+@media screen and (max-width:680px) {
+    .section4{
+        #three{
+            display: none;
+        }
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .section4{
+        #two{
+            display: none;
+        }
+    }
+    
+}

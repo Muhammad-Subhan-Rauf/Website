@@ -1,0 +1,269 @@
+@import './colors';
+@import './fonts.scss';
+.section6{
+
+
+    .content6{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: $second_bg_color;
+        padding-bottom: 100px;
+        padding-top: min(100px, 7vw);
+
+        
+
+        width: 100%;
+        .image{
+            width: 60vw; 
+            height: 43vw;
+            max-width: 870px;
+            max-height: 624px;
+            
+            min-height: 624px;
+
+            position: relative;
+            z-index: 47;
+
+            
+
+            .img_text{
+                display: flex;
+                flex-direction: row;
+
+                position: absolute;
+                bottom: 10%;
+                left: 5%;
+
+
+                text-wrap: nowrap;
+                .info{
+                    .heading{
+                        font-size: $bigger_heading;
+                        font-family: $Bio;
+                        color: $font_color;
+
+                    }
+                    .subheading{
+                        font-size: $bigger_subheading;
+                        font-family: $Bio;
+                        color: $font_color;
+                    }
+                }
+                .info:nth-child(2){
+                    margin-left: 5%;
+                }
+            }
+
+
+
+
+
+
+            img{
+                width: 60vw;
+                height: 43vw;
+                max-width: 870px;
+                max-height: 624px;
+
+                min-height: 624px;
+
+                z-index: 49;
+                object-fit: cover;
+                object-position: 100% 100%;
+
+                border-radius: 60px;
+
+                
+            }
+
+
+
+            .dots{
+                height: 176px;
+                width: 176px;
+                
+                
+                position: absolute;
+                left: calc(100% - 135px);
+                top: calc(100% - 130px);
+                z-index: -1;
+                #dot{
+                    height: 176px;
+                    width: 176px;
+                    min-height: 176px;
+                    min-width: 176px;
+                    border-radius: 0px;
+                
+                }
+            }
+            .icon{
+                #play{
+                    width: 7.8vw;
+                    height: 7.8vw;
+                    max-width: 112px;
+                    max-height: 112px;
+
+                    border-radius: 50%;
+                    
+                    margin-left: 80%;
+                    margin-top: -20%;
+                    
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 51;
+
+                    transition: transform 1s, box-shadow 1s;
+                    
+
+                    &:hover{
+                        transform: scale(1.2);
+                        box-shadow: 3px 3px 10px black;
+                    }
+                }
+            }
+
+            
+
+            
+        }
+
+        .text1{
+            text-align: right;
+
+            text-wrap: nowrap;
+
+            z-index: 50;
+            
+            margin-top: min(-250px, -17.361);
+            margin-left: max(-310px, -21.527vw);
+
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: flex-end;
+            
+            .heading{
+                font-size: $subheadings;
+                line-height: min(32px, 2.22vw);
+                font-family: "DM Sans", sans-serif;
+                font-weight: 700;
+                max-width: 147px;
+                text-align: right;
+
+            }
+            .line1{
+                font-size: $headings;
+                line-height: min(64px, 4.5vw);
+                font-weight: 700;
+
+                font-family: "BioRhyme", serif;
+                max-width: 610px;
+                text-align: right;
+                
+            }
+            
+
+            
+        }
+
+        
+
+        
+
+        
+    }
+    
+}
+
+@media screen and (max-width: 768px)
+{
+    .section6{
+        .content6{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 0px;
+
+            
+            .image{
+                
+                object-fit: fill;
+
+                
+                width: 85vw;
+                height: 61vw;
+
+                justify-self: center;
+                
+
+                .img_text{
+                    flex-direction: column;
+                    .info{
+                        .heading{
+                            font-size: $bigger_responsive_heading;
+                        }
+                        .subheading{
+                            font-size: $bigger_responsive_subheading;
+                        }
+                    }
+                }
+
+                img{
+                    width: 85vw;
+                    height: 61vw;
+                    max-width: 870px;
+                    max-height: 624px;
+                }
+
+                .dots{
+                    left: calc(100% - 160px);
+                    top: calc(100% - 130px);
+                }
+
+                
+                
+            }
+
+            .text1{
+                text-align: left;
+    
+                text-wrap: wrap;
+
+                margin-top: 60px;
+                margin-bottom: 50px;
+                margin-right: min(70px, 9.11vw);
+                margin-left: min(70px, 9.11vw);
+
+                max-width: 100%;
+                align-self: flex-end;
+
+                .heading{
+                    font-size: $responsive_subheadings;
+                    line-height: 32px;
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 700;
+                    max-width: 147px;
+                }
+                .line1{
+                    text-align: right;
+                    font-size: $responsive_headings;
+                    line-height: 48px;
+                    font-weight: 700;
+                    font-family: "BioRhyme", serif;
+                    text-wrap: wrap;
+                }
+            }
+
+            
+        }
+
+        
+    }
+}

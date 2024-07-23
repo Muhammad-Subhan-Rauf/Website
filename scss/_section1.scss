@@ -1,0 +1,215 @@
+@import './colors';
+
+.section1{
+
+
+    .content1{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: $secondary_color;
+        padding-bottom: 100px;
+
+        
+
+        width: 100%;
+        .image{
+            width: 60vw; 
+            height: 43vw;
+            max-width: 870px;
+            max-height: 624px;
+            
+            position: relative;
+            z-index: 47;
+            
+
+            img{
+                width: 60vw;
+                height: 43vw;
+                max-width: 870px;
+                max-height: 624px;
+                z-index: 49;
+            }
+
+
+
+            .dots{
+                height: 176px;
+                width: 176px;
+                
+                
+                position: absolute;
+                left: calc(100% - 135px);
+                top: calc(100% - 130px);
+                z-index: -1;
+                #dot{
+                    height: 176px;
+                    width: 176px;
+                    
+                
+                }
+            }
+            .icon{
+                #play{
+                    width: 7.8vw;
+                    height: 7.8vw;
+                    max-width: 112px;
+                    max-height: 112px;
+
+                    border-radius: 50%;
+                    
+                    margin-left: 80%;
+                    margin-top: -20%;
+                    
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 51;
+
+                    transition: transform 1s, box-shadow 1s;
+                    
+
+                    &:hover{
+                        transform: scale(1.2);
+                        box-shadow: 3px 3px 10px black;
+                    }
+                }
+            }
+
+            
+
+            
+        }
+
+        .text1{
+            text-align: left;
+
+            text-wrap: nowrap;
+            margin-right: -260px;
+            z-index: 50;
+            
+            margin-left: 14px;
+            .heading{
+                font-size: 18px;
+                line-height: 32px;
+                font-family: "DM Sans", sans-serif;
+                font-weight: 700;
+                max-width: 147px;
+            }
+            .line1{
+                font-size: min(72px, 7.8vw);
+                line-height: 80px;
+                font-weight: 700;
+
+                font-family: "BioRhyme", serif;
+                max-width: 527px;
+            }
+
+            .contact_button{
+                background-color: $primary_color;
+                border: none;
+                border-radius: 30px;
+                width: 170px;
+                height: 48px;
+                color: $font_color;
+                font-family: "BioRhyme", serif;
+                font-weight: 700;
+                font-size: 18px;
+                margin-top: 50px;
+
+                transition: background-color 0.5s;
+ 
+                
+                &:hover{
+                    background-color: $darker_primary_color;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $font_color;
+                }
+                
+            }
+        }
+
+        
+
+        
+
+        
+    }
+    
+}
+
+@media screen and (max-width: 768px)
+{
+    .section1{
+        .content1{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            
+            .image{
+                margin-left: 5vw;
+                margin-right: 5vw;
+                object-fit: fill;
+
+                
+                width: 85vw;
+                height: 61vw;
+
+                justify-self: center;
+                
+
+                img{
+                    width: 85vw;
+                    height: 61vw;
+                    max-width: 870px;
+                    max-height: 624px;
+                }
+
+                .dots{
+                    left: calc(100% - 160px);
+                    top: calc(100% - 130px);
+                }
+
+                
+                
+            }
+
+            .text1{
+                text-align: left;
+    
+                text-wrap: wrap;
+
+                margin-top: 100px;
+                margin-bottom: 50px;
+
+                max-width: 100%;
+                .heading{
+                    font-size: 18px;
+                    line-height: 32px;
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 700;
+                    max-width: 147px;
+                }
+                .line1{
+                    font-size: min(72px, 12vw);
+                    line-height: 80px;
+                    font-weight: 700;
+                    font-family: "BioRhyme", serif;
+                    text-wrap: wrap;
+                }
+            }
+
+            
+        }
+
+        
+    }
+}

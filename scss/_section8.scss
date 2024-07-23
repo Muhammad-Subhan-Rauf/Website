@@ -1,0 +1,296 @@
+@import './colors';
+@import './fonts';
+@import './mixins';
+
+
+.section8{
+
+    background-color: $second_bg_color;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: max(100px, 10vw);
+    padding-right: max(100px, 10vw);
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    position: relative;
+    z-index: 47;
+
+    
+
+    .text{
+        .heading{
+            font-size: $headings;
+            color: $second_font_color;
+            font-family: $Bio;
+            font-weight: $bold;
+
+            margin-right: 100px;
+        }
+        .subheading{
+            font-size: $subheadings;
+            color: $second_font_color;
+            font-family: $Sans;
+        }
+
+
+        .buttons{
+        
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            margin-bottom: 50px;
+    
+            a{
+                text-decoration: none;
+                .button{
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    background-color: white;
+    
+                    color: $primary_color;
+    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-size: 22px;
+                    font-weight: $bold
+                }
+                .left{
+                    @extend .button;
+                    margin-right: 10px
+                }
+    
+                .right{
+                    @extend .button;
+    
+                }
+            }
+        }
+    }
+
+    .image{
+        width: 60.416vw;
+        height: 592px;
+
+        max-width: 870px;
+
+        overflow: hidden;
+
+        border-radius: 40px;
+
+        z-index: 47;
+
+        img{
+            width: 60.416vw;
+            height: 592px;
+            max-width: 870px;
+
+
+            object-fit: cover;
+            object-position: 0% 0%;
+        }
+
+        
+    }
+
+    .review{
+        width: 50vw;
+        height: 592px;
+        background-color: white;
+        border-radius: 40px;
+        margin-left: -100px;
+
+        z-index: 48;
+
+        
+        
+
+
+
+        .buttons{
+            display: none;
+        }
+        .inner{
+            height: calc(100% - 60px);
+            
+            
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            .quotes{
+                font-size: 52px;
+                color: $primary_color;
+            }
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                
+
+  
+                .rev{
+                    font-size: $card_text;
+                    font-family: $Sans;
+                    line-height: 2.22vw;
+                    color: $second_font_color;
+
+                    margin-bottom: 20px;
+                }
+
+                .person{
+                    font-size: $card_heading;
+                    font-family: $Bio;
+                    font-weight: $bold;
+                    line-height: 2.22vw;
+                    color: $second_font_color;
+                }
+
+                .source{
+                    font-size: $card_text;
+                    font-family: $Sans;
+                    line-height: 2.22vw;
+                    color: $transparent_color_dark;
+                }
+
+                
+            }
+            
+        }
+
+        
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section8{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+ 
+        
+        .text{
+            align-self: flex-start;
+            height: fit-content;
+            margin-bottom: 50px;
+            
+
+ 
+            .heading{
+                
+                font-size: $responsive_headings;
+                margin-right: 0px;
+                
+            }
+            .subheading{
+                
+                font-size: $responsive_subheadings;
+            }
+
+            .buttons{
+                display: none;
+            }
+        }
+
+        .image{
+            align-self: center;
+            width: 92.3vw;
+            max-width: 500px;
+            
+            min-height: 592px;
+
+
+            margin-bottom: -300px;
+
+            img{
+                width: 92.3vw;
+                max-width: 500px;
+                object-position: 0% 100%;
+            }
+        }
+
+        .review{
+
+            width: 92.3vw;
+            max-width: 500px;
+            margin-left: 0px;
+
+
+          
+            .inner{
+                .text{
+                    align-self: flex-start;
+
+                    .rev{
+                        font-size: $responsive_card_text;
+                        line-height: 32px;
+                    }
+                    .person{
+                        font-size: $responsive_card_heading;
+                        line-height: 32px;
+
+                    }
+                    .source{
+                        font-size: $responsive_card_text;
+                        line-height: 32px;
+
+                    }
+                }
+            }
+
+
+            .buttons{
+
+                display: flex;
+                flex-direction: row;
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+                margin-left: calc(50% - 58px);
+                a{
+                    text-decoration: none;
+                    .button{
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 50%;
+                        background-color: white;
+        
+                        color: $primary_color;
+        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        font-size: 22px;
+                        font-weight: $bold
+                    }
+                    .left{
+                        @include buttons;
+                        margin-right: 10px
+                    }
+        
+                    .right{
+                        @include buttons;
+        
+                    }
+                }
+            }
+        }
+    }
+    
+}

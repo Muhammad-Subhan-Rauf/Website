@@ -1,0 +1,103 @@
+
+.section1{
+    background-color: #F7F2E2;
+
+    .navbar
+    {
+        max-height: 64px;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-between;
+
+        margin-bottom: 64px;
+        .icon{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: white;
+            font-size: 16px;
+            color: #DD514C;
+            
+            margin-right: 16px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            transition: transform 0.5s, box-shadow 0.5s;
+                
+                &:hover{
+                    transform: scale(1.2);
+                    box-shadow: 3px 3px 10px black;
+                }
+            
+        }
+
+        .logo{
+            font-family: "BioRhyme", serif;
+            font-weight: 900;
+            font-style: normal;
+
+            font-size: 48px;
+            margin-top: 0px;
+        }
+
+        .logo_icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            margin-left: 10%;
+            margin-top: 16px;
+
+            a{
+                text-decoration: none;
+            }
+
+        }
+
+        .social_nav
+        {
+            width: 160px;
+            max-width: 160px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 10%;
+            margin-top: 16px;
+
+            a{
+                text-decoration: none;
+            }
+            .icon{
+                margin-right: 0px;
+                font-size: 16px;
+
+
+                
+                
+            }
+            
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{   
+    .section1{
+        .navbar{
+            margin-bottom: 0px;
+            .social_nav{
+                display: none;
+            }
+            .logo_icons{
+                margin-left: 4%;
+            }
+        }
+    }
+}

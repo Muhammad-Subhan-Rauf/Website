@@ -1,0 +1,170 @@
+@import './colors';
+@import './fonts';
+
+.section3{
+    height: 880px;
+    background-color: $secondary_color;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+
+
+    
+
+
+    .text3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: $second_font_color;
+
+        margin-bottom: 50px;
+        .heading{
+            font-family: $Sans;
+            font-weight: $bold;
+            font-size: $subheadings;
+        }
+        .line1{
+            font-family: $Bio;
+            font-size: $headings;
+            font-weight: $bold;
+            margin-bottom: -50px;
+        }
+    }
+
+    .slides{
+
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 100px;
+
+        
+
+        
+
+
+        .slide{
+            height: 544px;
+            width: 67.36vw;
+            max-height: 544px;
+            max-width: 970px;
+
+            margin-left: 1.05vw;
+            margin-right: 1.05vw;
+            border-radius: 30px;
+            
+            
+            position: relative;
+            z-index: 47;
+
+            
+
+
+
+            .inner{
+                overflow: hidden;
+                object-fit: cover;
+                border-radius: 30px;
+                position: relative;
+                img{
+                    height: 544px;
+                    
+                    max-height: 544px;
+                    max-width: 970px;
+                }
+                
+            }
+
+            .dots{
+                position: absolute;
+                
+                left: calc(100% - 100px);
+                bottom: calc(100% - 130px);
+
+                z-index: -1;
+        
+                img{
+                    height: 176px;
+                    width: 176px;
+                    
+                }
+            }
+            .text{
+
+                position: absolute;
+                border-radius: 0px 30px 0px 30px;
+                
+                width: 32vw;
+                height: 176px;
+                max-height: 176px;
+
+                z-index: 1;
+                background-color: $font_color;
+
+                bottom: 0%;
+
+                padding-left: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                .heading{
+                    font-size: $responsive_headings;
+                    font-family: $Bio;
+                }
+                .desc{
+                    font-size: $responsive_subheadings;
+                    font-family: $Sans;
+                }
+            }
+
+            
+        }
+
+        .slide:nth-child(1){
+            overflow: hidden;
+        }
+        .slide:nth-child(3){
+            overflow: hidden;
+        }
+
+        
+    }
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    .section3{
+        .text3{
+            .heading{
+                font-size: $responsive_subheadings;
+            }
+            .line1{
+                font-size: $responsive_headings;
+
+            }
+        }
+
+        .slides{
+            .slide{
+                .text{
+                    .heading{
+                        font-size: $responsive_card_heading;
+                        font-weight: $bold;
+                    }
+                }
+            }
+        }
+    }
+    
+}
