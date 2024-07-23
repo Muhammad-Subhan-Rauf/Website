@@ -233,7 +233,7 @@
         .text2{
             // border: solid;
             align-self: flex-end;
-            margin-right: 50px;
+            margin-right: min(50px, calc(8.55vw - 10px));
         }
         .cards{
             padding-left: 10%;

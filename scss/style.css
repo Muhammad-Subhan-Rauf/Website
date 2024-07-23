@@ -396,7 +396,7 @@
 @media screen and (max-width: 768px) {
   .section2 .text2 {
     align-self: flex-end;
-    margin-right: 50px;
+    margin-right: min(50px, 8.55vw - 10px);
   }
   .section2 .cards {
     padding-left: 10%;
