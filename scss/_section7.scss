@@ -143,7 +143,14 @@
                 align-items: center;
 
                 font-size: 22px;
-                font-weight: $bold
+                font-weight: $bold;
+                
+                transition: transform 0.5s, box-shadow 0.5s;
+                
+                &:hover{
+                    transform: scale(1.2);
+                    box-shadow: 3px 3px 10px black;
+                }
             }
             .left{
                 @extend .button;
@@ -155,6 +162,8 @@
 
             }
         }
+
+        
     }
 }
 

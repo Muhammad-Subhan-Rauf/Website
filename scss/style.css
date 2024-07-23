@@ -281,6 +281,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.section2 .cards .card .buttons:hover {
+  transform: scale(1.2);
+  box-shadow: 3px 3px 10px black;
 }
 .section2 .cards .card #right {
   left: 30%;
@@ -749,6 +754,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.section5 .cards .card .buttons:hover {
+  transform: scale(1.2);
+  box-shadow: 3px 3px 10px black;
 }
 .section5 .cards .card #right {
   right: max(190%, 50vw);
@@ -1119,6 +1129,11 @@
   align-items: center;
   font-size: 22px;
   font-weight: 700;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.section7 .buttons a .button:hover, .section7 .buttons a .right:hover, .section7 .buttons a .left:hover {
+  transform: scale(1.2);
+  box-shadow: 3px 3px 10px black;
 }
 .section7 .buttons a .left {
   margin-right: 10px;
@@ -1199,10 +1214,16 @@
   background-color: white;
   color: #DD514C;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 22px;
   font-weight: 700;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.section8 .text .buttons a .button:hover, .section8 .text .buttons a .right:hover, .section8 .text .buttons a .left:hover {
+  transform: scale(1.2);
+  box-shadow: 3px 3px 10px black;
 }
 .section8 .text .buttons a .left {
   margin-right: 10px;
@@ -1349,10 +1370,16 @@
     background-color: white;
     color: #DD514C;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 22px;
     font-weight: 700;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  .section8 .review .buttons a .button:hover, .section8 .review .section7 .buttons a .left:hover, .section7 .section8 .review .buttons a .left:hover, .section8 .review .section7 .buttons a .right:hover, .section7 .section8 .review .buttons a .right:hover, .section8 .review .text .buttons a .left:hover, .section8 .text .review .buttons a .left:hover, .section8 .review .text .buttons a .right:hover, .section8 .text .review .buttons a .right:hover {
+    transform: scale(1.2);
+    box-shadow: 3px 3px 10px black;
   }
   .section8 .review .buttons a .left {
     width: 48px;
