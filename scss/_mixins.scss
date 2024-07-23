@@ -13,3 +13,18 @@
     font-size: 22px;
     font-weight: $bold
 }
+
+
+@mixin column_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin row_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -21,9 +21,8 @@
 
 
     .text3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include column_center;
+        
         text-align: center;
         color: $second_font_color;
 
