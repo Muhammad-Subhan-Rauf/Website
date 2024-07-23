@@ -1045,7 +1045,10 @@
   position: relative;
   z-index: 47;
 }
-.section7 .cards .card {
+.section7 .cards a {
+  text-decoration: none;
+}
+.section7 .cards a .card {
   width: 25.7vw;
   max-width: 370px;
   margin-right: max(30px, 2vw);
@@ -1057,10 +1060,10 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-.section7 .cards .card .top_text {
+.section7 .cards a .card .top_text {
   margin-left: min(30px, 2vw);
 }
-.section7 .cards .card .top_text .heading {
+.section7 .cards a .card .top_text .heading {
   font-size: min(72px, 7.8vw);
   font-weight: 700;
   color: white;
@@ -1068,30 +1071,30 @@
   text-align: left;
   text-wrap: nowrap;
 }
-.section7 .cards .card .top_text .subheading {
+.section7 .cards a .card .top_text .subheading {
   font-size: 16px;
   font-family: "DM Sans", sans-serif;
   color: rgba(255, 255, 255, 0.53);
   margin-top: -5px;
 }
-.section7 .cards .card .bottom_text {
+.section7 .cards a .card .bottom_text {
   margin-left: min(30px, 2vw);
   margin-bottom: min(30px, 2vw);
   margin-right: min(30px, 2vw);
   text-align: left;
 }
-.section7 .cards .card .bottom_text .heading {
+.section7 .cards a .card .bottom_text .heading {
   font-size: min(24px, 1.66vw);
   font-family: "BioRhyme", serif;
   color: white;
   font-weight: 700;
 }
-.section7 .cards .card .bottom_text .subheading {
+.section7 .cards a .card .bottom_text .subheading {
   font-size: min(16px, 1.11vw);
   font-family: "DM Sans", sans-serif;
   color: white;
 }
-.section7 .cards .card .dots {
+.section7 .cards a .card .dots {
   height: 176px;
   width: 176px;
   position: absolute;
@@ -1099,14 +1102,14 @@
   top: calc(100% - 130px);
   z-index: -100;
 }
-.section7 .cards .card .dots #dot {
+.section7 .cards a .card .dots #dot {
   height: 176px;
   width: 176px;
   min-height: 176px;
   min-width: 176px;
   border-radius: 0px;
 }
-.section7 .cards .card:nth-child(3) {
+.section7 .cards a .card:nth-child(3) {
   margin-right: 0px;
 }
 .section7 .buttons {
@@ -1415,6 +1418,7 @@
   align-items: center;
   height: 432px;
   position: relative;
+  background-color: rgb(141, 153, 198);
 }
 .section9 .background_image {
   width: 100%;
