@@ -1162,7 +1162,7 @@
   z-index: 47;
 }
 .section8 .text {
-  margin-left: 50px;
+  margin-left: min(50px, 8.55vw - 10px);
 }
 .section8 .text .heading {
   font-size: min(56px, 4vw);

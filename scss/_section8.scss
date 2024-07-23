@@ -22,7 +22,8 @@
     
 
     .text{
-        margin-left: 50px;
+        margin-left: min(50px, calc(8.55vw - 10px));
+        
         .heading{
             font-size: $headings;
             color: $second_font_color;
