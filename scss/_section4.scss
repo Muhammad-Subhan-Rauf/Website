@@ -1,6 +1,9 @@
 @import './colors';
 @import './fonts';
 @import './progress'; 
+@import './breakpoints'; 
+@import './mixins';
+
 
 .section4{
     height: 448px;
@@ -58,7 +61,7 @@
 
 }
 
-@media screen and (max-width:1060px) {
+@media screen and (max-width:$three_circles) {
     .section4{
         #four{
             display: none;
@@ -67,7 +70,7 @@
     
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:$two_circles) {
     .section4{
         #three{
             display: none;
@@ -76,7 +79,7 @@
     
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:$one_circles) {
     .section4{
         #two{
             display: none;

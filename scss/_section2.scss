@@ -1,7 +1,7 @@
 @import './colors';
-@import './fonts.scss';
-
-
+@import './mixins';
+@import './fonts';
+@import './breakpoints';
 
 
 
@@ -140,7 +140,7 @@
     }
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: $tablets)
 {
     .section2{
         display: flex;
@@ -229,7 +229,7 @@
     
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: $tablets)
 {
     .section2{
         .text2{

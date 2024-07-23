@@ -1010,6 +1010,7 @@
   font-size: min(18px, 1.25vw);
   color: #333333;
   font-family: "DM Sans", sans-serif;
+  font-weight: 700;
 }
 .section7 .text .heading {
   font-size: min(56px, 4vw);
@@ -1172,6 +1173,7 @@
   font-size: min(18px, 1.25vw);
   color: #333333;
   font-family: "DM Sans", sans-serif;
+  font-weight: 700;
 }
 .section8 .text .buttons {
   display: flex;

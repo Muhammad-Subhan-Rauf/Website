@@ -1,5 +1,8 @@
 @import './colors';
+@import './mixins';
 @import './fonts';
+@import './breakpoints';
+
 
 .section3{
     height: 880px;
@@ -142,7 +145,7 @@
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: $tablets) {
 
     .section3{
         .text3{

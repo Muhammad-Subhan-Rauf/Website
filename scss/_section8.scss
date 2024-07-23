@@ -1,6 +1,8 @@
 @import './colors';
-@import './fonts';
 @import './mixins';
+@import './fonts';
+@import './breakpoints';
+
 
 
 .section8{
@@ -37,6 +39,7 @@
             font-size: $subheadings;
             color: $second_font_color;
             font-family: $Sans;
+            font-weight: $bold;
         }
 
 
@@ -175,7 +178,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablets) {
     .section8{
         flex-direction: column;
         justify-content: center;

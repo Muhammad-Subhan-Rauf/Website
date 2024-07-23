@@ -1,5 +1,8 @@
-@import './fonts';
 @import './colors';
+@import './mixins';
+@import './fonts';
+@import './breakpoints';
+
 
 .section7{
     height: fit-content;
@@ -18,6 +21,7 @@
             font-size: $subheadings;
             color: $second_font_color;
             font-family: $Sans;
+            font-weight: $bold;
         }
 
         .heading{
@@ -158,7 +162,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablets) {
     .section7{
 
         .text{

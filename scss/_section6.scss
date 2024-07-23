@@ -1,5 +1,9 @@
 @import './colors';
-@import './fonts.scss';
+@import './mixins';
+@import './fonts';
+@import './breakpoints';
+
+
 .section6{
 
 
@@ -181,7 +185,7 @@
     
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: $tablets)
 {
     .section6{
         .content6{
