@@ -179,7 +179,7 @@
 
         .cards{
             margin-top: 50px;
-            margin-right: 1vw;
+            margin-right: 0px;
             
             .card{
                 width: min(80vw, 346px);
@@ -221,6 +221,9 @@
             }
             .card:nth-child(2){
                 display: none;
+            }
+            .card:nth-child(1){
+                margin-right: 0px;
             }
         }
     }

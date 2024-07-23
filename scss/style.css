@@ -509,6 +509,9 @@
   .section3 .text3 .line1 {
     font-size: min(40px, 15vw);
   }
+  .section3 .slides .slide .text {
+    padding-left: 20px;
+  }
   .section3 .slides .slide .text .heading {
     font-size: 24px;
     font-weight: 700;
@@ -784,7 +787,7 @@
   }
   .section5 .cards {
     margin-top: 50px;
-    margin-right: 1vw;
+    margin-right: 0px;
   }
   .section5 .cards .card {
     width: min(80vw, 346px);
@@ -820,6 +823,9 @@
   }
   .section5 .cards .card:nth-child(2) {
     display: none;
+  }
+  .section5 .cards .card:nth-child(1) {
+    margin-right: 0px;
   }
 }
 .section6 .content6 {
@@ -1572,6 +1578,10 @@
 .footer_section footer .company_info .social .social_nav .icon:hover {
   transform: scale(1.2);
   box-shadow: 3px 3px 10px black;
+}
+.footer_section footer hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .footer_section footer .copyright {
   display: flex;
