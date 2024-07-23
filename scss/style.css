@@ -217,7 +217,8 @@
 }
 .section2 {
   background-color: #F9C65E;
-  height: 880px;
+  height: -moz-fit-content;
+  height: fit-content;
   padding-right: 10vw;
   padding-left: 135px;
   padding-bottom: 200px;
