@@ -113,6 +113,9 @@
 @media screen and (max-width: 768px) {
     .section9{
         .content{
+            .dots{
+                left: calc(100% - 190px);
+            }
             .subheading{
                 font-size: $responsive_subheadings;
             }

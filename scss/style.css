@@ -1164,6 +1164,7 @@
   font-family: "BioRhyme", serif;
   font-weight: 700;
   margin-right: 100px;
+  margin-left: 50px;
 }
 .section8 .text .subheading {
   font-size: min(18px, 1.25vw);
@@ -1447,6 +1448,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .section9 .content .dots {
+    left: calc(100% - 190px);
+  }
   .section9 .content .subheading {
     font-size: min(18px, 4.8vw);
   }
@@ -1643,4 +1647,15 @@ body {
   width: 100%;
   overflow-x: hidden;
   margin: 0px 0px 0px 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+section, footer {
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
 }/*# sourceMappingURL=style.css.map */

@@ -19,3 +19,13 @@ body{
     
 }
 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+section,footer{
+    overflow: hidden;
+    white-space: wrap;
+    word-break: break-word;
+}
