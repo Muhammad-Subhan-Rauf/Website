@@ -185,8 +185,10 @@
             }
         }
         .cards{
-            .card{
-                width: 92vw;
+            a{
+
+                .card{
+                    width: 92vw;
                 margin-right: 0px;
 
                 .top_text{
@@ -210,14 +212,16 @@
                 }
 
             }
-            .card:nth-child(1)
-            {
-                display: none;
-            }
-            .card:nth-child(2)
-            {
-                display: none;
-            }
+            
+        }
+        a:nth-child(1)
+        {
+            display: none;   
+        }
+        a:nth-child(2)
+        {
+            display: none;
+        }
         }
     }
 }

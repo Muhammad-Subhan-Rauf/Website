@@ -1148,27 +1148,27 @@
   .section7 .text .subheading {
     font-size: min(18px, 4.8vw);
   }
-  .section7 .cards .card {
+  .section7 .cards a .card {
     width: 92vw;
     margin-right: 0px;
   }
-  .section7 .cards .card .top_text .heading {
+  .section7 .cards a .card .top_text .heading {
     font-size: min(72px, 19.2vw);
   }
-  .section7 .cards .card .bottom_text .heading {
+  .section7 .cards a .card .bottom_text .heading {
     font-size: 24px;
   }
-  .section7 .cards .card .bottom_text .subheading {
+  .section7 .cards a .card .bottom_text .subheading {
     font-size: 16px;
   }
-  .section7 .cards .card .dots {
+  .section7 .cards a .card .dots {
     left: calc(100% - 160px);
     top: calc(100% - 130px);
   }
-  .section7 .cards .card:nth-child(1) {
+  .section7 .cards a:nth-child(1) {
     display: none;
   }
-  .section7 .cards .card:nth-child(2) {
+  .section7 .cards a:nth-child(2) {
     display: none;
   }
 }
