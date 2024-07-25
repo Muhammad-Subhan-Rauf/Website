@@ -1107,7 +1107,7 @@
   height: 176px;
   width: 176px;
   position: absolute;
-  left: calc(100% - 115px);
+  left: calc(100% - 120px);
   top: calc(100% - 130px);
   z-index: -100;
 }
