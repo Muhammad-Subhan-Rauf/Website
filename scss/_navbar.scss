@@ -11,6 +11,13 @@
         justify-content: space-between;
 
         margin-bottom: 64px;
+
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        z-index: 100;
+        background-color: $secondary_color;
+        padding-bottom: 20px;
         .icon{
             width: 48px;
             height: 48px;

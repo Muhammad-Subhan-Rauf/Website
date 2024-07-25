@@ -24,6 +24,7 @@
             
             position: relative;
             z-index: 47;
+            align-self: center;
             
 
             img{
@@ -92,7 +93,7 @@
             margin-right: -260px;
             z-index: 50;
             
-            margin-left: 14px;
+            margin-left: calc(10vw - 14px);
             .heading{
                 font-size: 18px;
                 line-height: 32px;
@@ -156,11 +157,10 @@
 
             
             .image{
-                margin-left: 5vw;
-                margin-right: 5vw;
-                object-fit: fill;
-
                 
+                object-fit: fill;
+                margin: 0px; 
+                align-self: center;
                 width: 85vw;
                 height: 61vw;
 

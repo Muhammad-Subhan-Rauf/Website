@@ -14,6 +14,7 @@
   max-height: 624px;
   position: relative;
   z-index: 47;
+  align-self: center;
 }
 .section1 .content1 .image img {
   width: 60vw;
@@ -57,7 +58,7 @@
   text-wrap: nowrap;
   margin-right: -260px;
   z-index: 50;
-  margin-left: 14px;
+  margin-left: calc(10vw - 14px);
 }
 .section1 .content1 .text1 .heading {
   font-size: 18px;
@@ -102,10 +103,10 @@
     justify-content: flex-start;
   }
   .section1 .content1 .image {
-    margin-left: 5vw;
-    margin-right: 5vw;
     -o-object-fit: fill;
        object-fit: fill;
+    margin: 0px;
+    align-self: center;
     width: 85vw;
     height: 61vw;
     justify-self: center;
@@ -151,6 +152,12 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 64px;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 100;
+  background-color: #F7F2E2;
+  padding-bottom: 20px;
 }
 .section1 .navbar .icon {
   width: 48px;
