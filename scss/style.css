@@ -1171,7 +1171,7 @@
     font-size: 16px;
   }
   .section7 .cards a .card .dots {
-    left: calc(100% - 160px);
+    left: calc(100% - 165px);
     top: calc(100% - 130px);
   }
   .section7 .cards a:nth-child(1) {
