@@ -100,6 +100,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding-top: 0px;
   }
   .section1 .content1 .image {
     -o-object-fit: fill;
@@ -221,9 +222,6 @@
   }
   .section1 .navbar .social_nav {
     display: none;
-  }
-  .section1 .navbar .logo_icons {
-    margin-left: 4%;
   }
 }
 .section2 {
