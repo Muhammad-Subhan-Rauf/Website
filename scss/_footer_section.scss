@@ -84,7 +84,8 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-
+    
+                padding-right: 20px;
                 margin-left: 16vw;
                 .heading{
                     font-size: $bigger_subheading;
@@ -99,7 +100,7 @@
                 .social_nav
                 {
                     width: 160px;
-                    max-width: 160px;
+                    max-width: fit-content;
 
                     display: flex;
                     flex-direction: row;

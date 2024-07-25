@@ -4,7 +4,8 @@
 
     .navbar
     {
-        max-height: 64px;
+        max-height: 80px;
+        height: fit-content;
         display: flex;
         flex-direction: row;
         
@@ -70,12 +71,16 @@
         {
             width: 160px;
             max-width: 160px;
+            height: fit-content;
 
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             margin-right: 10%;
             margin-top: 16px;
+            
+
+            
 
             a{
                 text-decoration: none;

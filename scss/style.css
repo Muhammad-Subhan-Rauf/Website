@@ -5,6 +5,7 @@
   align-items: center;
   background-color: #F7F2E2;
   padding-bottom: 100px;
+  padding-top: 100px;
   width: 100%;
 }
 .section1 .content1 .image {
@@ -14,7 +15,6 @@
   max-height: 624px;
   position: relative;
   z-index: 47;
-  align-self: center;
 }
 .section1 .content1 .image img {
   width: 60vw;
@@ -58,7 +58,6 @@
   text-wrap: nowrap;
   margin-right: -260px;
   z-index: 50;
-  margin-left: calc(10vw - 14px);
 }
 .section1 .content1 .text1 .heading {
   font-size: 18px;
@@ -126,6 +125,7 @@
     text-wrap: wrap;
     margin-top: 100px;
     margin-bottom: 50px;
+    margin-left: calc(10vw - 14px);
     max-width: 100%;
   }
   .section1 .content1 .text1 .heading {
@@ -147,7 +147,9 @@
   background-color: #F7F2E2;
 }
 .section1 .navbar {
-  max-height: 64px;
+  max-height: 80px;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -197,6 +199,8 @@
 .section1 .navbar .social_nav {
   width: 160px;
   max-width: 160px;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1116,7 +1120,7 @@
   min-width: 176px;
   border-radius: 0px;
 }
-.section7 .cards a .card:nth-child(3) {
+.section7 .cards a:nth-child(3) .card {
   margin-right: 0px;
 }
 .section7 .buttons {
@@ -1578,6 +1582,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-right: 20px;
   margin-left: 16vw;
 }
 .footer_section footer .company_info .social .heading {
@@ -1589,7 +1594,8 @@
 }
 .footer_section footer .company_info .social .social_nav {
   width: 160px;
-  max-width: 160px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
