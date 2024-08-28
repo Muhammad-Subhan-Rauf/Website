@@ -54,7 +54,6 @@
 
                 margin-left: 4.305vw;
       
-
                 .heading{
                     font-size: $bigger_subheading;
                     font-family: $Sans;
@@ -63,6 +62,8 @@
 
 
                     margin-bottom: 50px;
+                    transition: all 0.5s;
+                    
 
                 }
                 .email{
@@ -70,12 +71,16 @@
                     font-family: $Sans;
                     color: $font_color;
                     line-height: 32px;
+                    transition: all 0.5s;
+
                 }
                 .number{
                     font-size: $card_text;
                     font-family: $Sans;
                     color: $font_color;
                     line-height: 32px;
+                    transition: all 0.5s;
+
                 }
             }
             .social{

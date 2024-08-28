@@ -98,6 +98,8 @@
 
         z-index: 47;
 
+        
+
         img{
             width: 60.416vw;
             height: 592px;
@@ -108,8 +110,16 @@
             object-position: 0% 0%;
         }
 
-        
+        &::before{
+            content: '';
+            background: url('images/dots.png');
+
+            top:0px;
+            left:-100px;
+        }    
     }
+    
+
 
     .review{
         width: 50vw;

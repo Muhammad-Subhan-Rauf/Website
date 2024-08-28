@@ -76,6 +76,7 @@
                     
 
                     &:hover{
+                        cursor: pointer;
                         transform: scale(1.2);
                         box-shadow: 3px 3px 10px black;
                     }
@@ -121,7 +122,7 @@
                 font-weight: 700;
                 font-size: 18px;
                 margin-top: 50px;
-
+                cursor: pointer;
                 transition: background-color 0.5s;
  
                 

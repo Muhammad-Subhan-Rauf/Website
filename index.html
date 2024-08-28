@@ -27,11 +27,13 @@
         <nav>
             <div class="navbar">
                 <div class="logo_icons">
-                    <a href="">
-                        <div class="icon">
+
+                    <div class="icon">
+                        <button>
                             <i class="fa-solid fa-bars"></i>
-                        </div>
-                    </a>
+                        </button>
+                    </div>
+
                     <div class="logo" title="ARCH Companies">
                         ARCH
                     </div>
@@ -58,14 +60,15 @@
                 <div class="heading">Arhitect for You</div>
                 <div class="line1">We Develop<br>Great Designs</div>
                 <div>
-                    <button class="contact_button" title="Contact Info"><a href="#">Contact Us</a></button>
+                    <button class="contact_button" title="Contact Info" onclick="contact_button()">Contact Us</button>
                 </div>
             </div>
 
             <div class="image">
                 <img src="images/picture.png" alt="">
 
-                <div class="icon"><a href=""><img src="images/play.png" alt="" id="play" title="Play Portfolio"></a>
+                <div class="icon"><img src="images/play.png" alt="" id="play" title="Play Portfolio"
+                        onclick="play_button()">
                 </div>
                 <div class="dots"><img src="images/dots.png" alt="" id="dot"></div>
             </div>
@@ -97,17 +100,21 @@
 
                     <div class="dots"><img src="images/dots.png" alt="" id="dot"></div>
 
-                    <a href="#">
-                        <div class="buttons">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </div>
-                    </a>
 
-                    <a href="#">
-                        <div class="buttons" id="right">
+                    <div class="buttons">
+                        <button onclick="left_arrow()">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                    </div>
+
+
+
+                    <div class="buttons" id="right">
+                        <button onclick="right_arrow()">
                             <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                    </a>
+                        </button>
+                    </div>
+
 
 
                 </div>
@@ -571,6 +578,10 @@
             </div>
         </footer>
     </div>
+
+
+    <script src="js/section1.js"></script>
+    <script src="js/section2.js"></script>
 
 </body>
 
