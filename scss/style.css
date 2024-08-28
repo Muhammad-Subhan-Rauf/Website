@@ -1113,10 +1113,7 @@
   position: relative;
   z-index: 47;
 }
-.section7 .cards a {
-  text-decoration: none;
-}
-.section7 .cards a .card {
+.section7 .cards .card {
   width: 25.7vw;
   max-width: 370px;
   margin-right: max(30px, 2vw);
@@ -1127,11 +1124,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  cursor: pointer;
 }
-.section7 .cards a .card .top_text {
+.section7 .cards .card .top_text {
   margin-left: min(30px, 2vw);
 }
-.section7 .cards a .card .top_text .heading {
+.section7 .cards .card .top_text .heading {
   font-size: min(72px, 7.8vw);
   font-weight: 700;
   color: white;
@@ -1139,30 +1137,30 @@
   text-align: left;
   text-wrap: nowrap;
 }
-.section7 .cards a .card .top_text .subheading {
+.section7 .cards .card .top_text .subheading {
   font-size: 16px;
   font-family: "DM Sans", sans-serif;
   color: rgba(255, 255, 255, 0.53);
   margin-top: -5px;
 }
-.section7 .cards a .card .bottom_text {
+.section7 .cards .card .bottom_text {
   margin-left: min(30px, 2vw);
   margin-bottom: min(30px, 2vw);
   margin-right: min(30px, 2vw);
   text-align: left;
 }
-.section7 .cards a .card .bottom_text .heading {
+.section7 .cards .card .bottom_text .heading {
   font-size: min(24px, 1.66vw);
   font-family: "BioRhyme", serif;
   color: white;
   font-weight: 700;
 }
-.section7 .cards a .card .bottom_text .subheading {
+.section7 .cards .card .bottom_text .subheading {
   font-size: min(16px, 1.11vw);
   font-family: "DM Sans", sans-serif;
   color: white;
 }
-.section7 .cards a .card .dots {
+.section7 .cards .card .dots {
   height: 176px;
   width: 176px;
   position: absolute;
@@ -1170,7 +1168,7 @@
   top: calc(100% - 130px);
   z-index: -100;
 }
-.section7 .cards a .card .dots #dot {
+.section7 .cards .card .dots #dot {
   height: 176px;
   width: 176px;
   min-height: 176px;
@@ -1186,14 +1184,12 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.section7 .buttons a {
-  text-decoration: none;
-}
-.section7 .buttons a .button, .section7 .section8 .text .buttons a .right, .section8 .text .section7 .buttons a .right, .section7 .section8 .text .buttons a .left, .section8 .text .section7 .buttons a .left, .section7 .buttons a .right, .section7 .buttons a .left {
+.section7 .buttons button {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   background-color: white;
+  border: none;
   color: #DD514C;
   display: flex;
   justify-content: center;
@@ -1201,12 +1197,13 @@
   font-size: 22px;
   font-weight: 700;
   transition: transform 0.5s, box-shadow 0.5s;
+  cursor: pointer;
 }
-.section7 .buttons a .button:hover, .section7 .buttons a .right:hover, .section7 .buttons a .left:hover {
+.section7 .buttons button:hover {
   transform: scale(1.2);
   box-shadow: 3px 3px 10px black;
 }
-.section7 .buttons a .left {
+.section7 .buttons .left {
   margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
@@ -1216,27 +1213,27 @@
   .section7 .text .subheading {
     font-size: min(18px, 4.8vw);
   }
-  .section7 .cards a .card {
+  .section7 .cards .card {
     width: 92vw;
     margin-right: 0px;
   }
-  .section7 .cards a .card .top_text .heading {
+  .section7 .cards .card .top_text .heading {
     font-size: min(72px, 19.2vw);
   }
-  .section7 .cards a .card .bottom_text .heading {
+  .section7 .cards .card .bottom_text .heading {
     font-size: 24px;
   }
-  .section7 .cards a .card .bottom_text .subheading {
+  .section7 .cards .card .bottom_text .subheading {
     font-size: 16px;
   }
-  .section7 .cards a .card .dots {
+  .section7 .cards .card .dots {
     left: calc(100% - 165px);
     top: calc(100% - 130px);
   }
-  .section7 .cards a:nth-child(1) {
+  .section7 .cards .card:nth-child(1) {
     display: none;
   }
-  .section7 .cards a:nth-child(2) {
+  .section7 .cards .card:nth-child(2) {
     display: none;
   }
 }

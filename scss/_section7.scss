@@ -40,8 +40,7 @@
 
         position: relative;
         z-index: 47;
-        a{
-            text-decoration: none;
+        
         
         .card{
 
@@ -58,6 +57,7 @@
             justify-content: space-between;
             align-items: flex-start;
 
+            cursor: pointer;
 
             .top_text{
                 // margin-top: 30px;
@@ -120,7 +120,7 @@
         }
 
         
-    }
+    
     a:nth-child(3){
         .card{
             margin-right: 0px;
@@ -136,40 +136,42 @@
         margin-top: 50px;
         margin-bottom: 50px;
 
-        a{
-            text-decoration: none;
-            .button{
-                width: 48px;
-                height: 48px;
-                border-radius: 50%;
-                background-color: white;
+        
+            
+        button{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: white;
 
-                color: $primary_color;
+            border: none;
+            color: $primary_color;
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-                font-size: 22px;
-                font-weight: $bold;
+            font-size: 22px;
+            font-weight: $bold;
 
-                transition: transform 0.5s, box-shadow 0.5s;
-                
-                &:hover{
-                    transform: scale(1.2);
-                    box-shadow: 3px 3px 10px black;
-                }
-            }
-            .left{
-                @extend .button;
-                margin-right: 10px
-            }
-
-            .right{
-                @extend .button;
-
+            transition: transform 0.5s, box-shadow 0.5s;
+            
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.2);
+                box-shadow: 3px 3px 10px black;
             }
         }
+        .left{
+            @extend .button;
+            margin-right: 10px
+        }
+
+        .right{
+            @extend .button;
+
+        }
+        
 
         
     }
@@ -188,40 +190,40 @@
             }
         }
         .cards{
-            a{
+          
 
-                .card{
-                    width: 92vw;
-                margin-right: 0px;
+            .card{
+                width: 92vw;
+            margin-right: 0px;
 
-                .top_text{
-                    .heading{
-                        font-size: $bigger_responsive_heading;
-                    }
+            .top_text{
+                .heading{
+                    font-size: $bigger_responsive_heading;
                 }
-
-                .bottom_text{
-                    .heading{
-                        font-size: $responsive_card_heading;
-                    }
-                    .subheading{
-                        font-size: $responsive_card_text;
-                    }
-                }
-
-                .dots{
-                    left: calc(100% - 165px);
-                    top: calc(100% - 130px);
-                }
-
             }
+
+            .bottom_text{
+                .heading{
+                    font-size: $responsive_card_heading;
+                }
+                .subheading{
+                    font-size: $responsive_card_text;
+                }
+            }
+
+            .dots{
+                left: calc(100% - 165px);
+                top: calc(100% - 130px);
+            }
+
+           
             
         }
-        a:nth-child(1)
+        .card:nth-child(1)
         {
             display: none;   
         }
-        a:nth-child(2)
+        .card:nth-child(2)
         {
             display: none;
         }
