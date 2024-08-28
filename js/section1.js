@@ -18,5 +18,5 @@ function contact_button() {
                 child.style.color = "white";
             }
         }, 2000)
-    }, 1000)
+    }, 2000)
 }
