@@ -22,7 +22,7 @@
     
 
     .text{
-        margin-left: min(50px, calc(8.55vw - 10px));
+        // margin-left: min(50px, calc(8.55vw - 10px));
         
         .heading{
             font-size: $headings;
@@ -49,9 +49,11 @@
             margin-bottom: 50px;
             
     
-            a{
-                text-decoration: none;
-                .button{
+            
+            
+            .left{
+                
+                button{
                     width: 48px;
                     height: 48px;
                     border-radius: 50%;
@@ -60,29 +62,52 @@
                     color: $primary_color;
     
                     @include column_center;
-
+    
                     font-size: 22px;
                     font-weight: $bold;
                     transition: transform 0.5s, box-shadow 0.5s;
+    
+                    cursor: pointer;
+                    border: none;
                 
                     &:hover{
                         transform: scale(1.2);
                         box-shadow: 3px 3px 10px black; 
                     }
-
+    
                     
                 }
-                .left{
-                    @extend .button;
-                    margin-right: 10px;
-                    
-                }
-    
-                .right{
-                    @extend .button;
-    
-                }
+                margin-right: 10px;
+                
             }
+
+            .right{
+                button{
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    background-color: white;
+    
+                    color: $primary_color;
+    
+                    @include column_center;
+                    border: none;
+                    font-size: 22px;
+                    font-weight: $bold;
+                    transition: transform 0.5s, box-shadow 0.5s;
+    
+                    cursor: pointer;
+                
+                    &:hover{
+                        transform: scale(1.2);
+                        box-shadow: 3px 3px 10px black; 
+                    }
+    
+                    
+                }
+
+            }
+            
         }
     }
 
@@ -98,7 +123,7 @@
 
         z-index: 47;
 
-        
+        transition: all 1s;
 
         img{
             width: 60.416vw;
@@ -133,7 +158,7 @@
         
         
 
-
+        transition: all 1s;
 
         .buttons{
             display: none;
@@ -281,13 +306,13 @@
                 margin-bottom: 50px;
 
                 margin-left: calc(50% - 58px);
-                a{
-                    text-decoration: none;
-                    .button{
+                
+                    button{
                         width: 48px;
                         height: 48px;
                         border-radius: 50%;
                         background-color: white;
+                        border: none;
         
                         color: $primary_color;
         
@@ -311,7 +336,7 @@
                         @include buttons;
         
                     }
-                }
+                
             }
         }
     }

@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/cf423508f1.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -60,7 +61,7 @@
                 <div class="heading">Arhitect for You</div>
                 <div class="line1">We Develop<br>Great Designs</div>
                 <div>
-                    <button class="contact_button" title="Contact Info" onclick="contact_button()">Contact Us</button>
+                    <button class="contact_button" title="Contact Info" onclick="contact_button(1000)">Contact Us</button>
                 </div>
             </div>
 
@@ -78,7 +79,8 @@
     </div>
 
 
-
+    <div class="sidebar">
+    </div>
     <div class="section2">
         <div class="text2">
             <div class="heading">Our Service</div>
@@ -370,7 +372,7 @@
 
         <div class="cards">
 
-            
+
 
             <div class="card" title="Blog Post" onclick="blog_click(this)">
                 <div class="top_text">
@@ -415,9 +417,9 @@
                 </div>
             </div>
 
-            
 
-            
+
+
 
 
 
@@ -456,7 +458,7 @@
                         November, 2020
                     </div>
                 </div>
-            
+
                 <div class="bottom_text">
                     <div class="subheading">
                         Architecture
@@ -466,7 +468,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card" title="Blog Post" onclick="blog_click(this)" style="display: none;">
                 <div class="top_text">
                     <div class="heading">
@@ -476,7 +478,7 @@
                         February, 2021
                     </div>
                 </div>
-            
+
                 <div class="bottom_text">
                     <div class="subheading">
                         Design
@@ -486,7 +488,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card" title="Blog Post" onclick="blog_click(this)" style="display: none;">
                 <div class="top_text">
                     <div class="heading">
@@ -496,7 +498,7 @@
                         June, 2022
                     </div>
                 </div>
-            
+
                 <div class="bottom_text">
                     <div class="subheading">
                         Lifestyle
@@ -506,9 +508,9 @@
                     </div>
                 </div>
             </div>
-            
 
-            
+
+
 
         </div>
 
@@ -536,12 +538,21 @@
             <div class="subheading">Testimonials</div>
             <div class="heading">What clients say</div>
             <div class="buttons">
-                <a href="">
-                    <div class="left"><i class="fa-solid fa-arrow-left"></i></div>
-                </a>
-                <a href="">
-                    <div class="right"><i class="fa-solid fa-arrow-right"></i></div>
-                </a>
+
+                <div class="left">
+                    <button onclick="left_arrow_8()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+
+
+                <div class="right">
+                    <button onclick="right_arrow_8()">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    
+                </div>
+
             </div>
         </div>
         <div class="image">
@@ -572,12 +583,20 @@
             </div>
 
             <div class="buttons">
-                <a href="">
-                    <div class="left"><i class="fa-solid fa-arrow-left"></i></div>
-                </a>
-                <a href="">
-                    <div class="right"><i class="fa-solid fa-arrow-right"></i></div>
-                </a>
+
+                <div class="left">
+                    <button onclick="left_arrow_8()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+
+
+                <div class="right">
+                    <button onclick="right_arrow_8()">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
             </div>
         </div>
     </div>
@@ -593,8 +612,8 @@
             <div class="dots"><img src="images/dots2.png" alt="" id="dot"></div>
 
 
-            <button class="last_one" title="contact us">
-                <a href="">Contact</a>
+            <button class="last_one" title="contact us" onclick="contact_button(500)">
+                Contact
             </button>
 
         </div>
@@ -660,12 +679,15 @@
     </div>
 
 
+
+
     <script src="js/section1.js"></script>
     <script src="js/section2.js"></script>
     <script src="js/section3.js"></script>
     <script src="js/progress_bar.js"></script>
     <script src="js/section5.js"></script>
     <script src="js/section7.js"></script>
+    <script src="js/section8.js"></script>
 
 
 </body>

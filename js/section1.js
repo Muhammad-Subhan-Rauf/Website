@@ -3,7 +3,7 @@ function play_button() {
         "https://www.youtube.com/watch?v=JLhbTGzE6MA", "_blank");
 }
 
-function contact_button() {
+function contact_button(time) {
     let contact = document.getElementsByClassName("contact")
     contact[0].scrollIntoView({ behavior: 'smooth' })
     setTimeout(() => {
@@ -18,5 +18,5 @@ function contact_button() {
                 child.style.color = "white";
             }
         }, 3000)
-    }, 2000)
+    }, time)
 }

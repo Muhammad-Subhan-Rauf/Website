@@ -163,12 +163,12 @@
             }
         }
         .left{
-            @extend .button;
+            @extend button;
             margin-right: 10px
         }
 
         .right{
-            @extend .button;
+            @extend button;
 
         }
         
