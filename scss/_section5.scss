@@ -63,6 +63,7 @@
                 max-height: 592px;
                 width: 25.7vw;
                 height: 42vw;
+                border-radius: 30px;
             }
             
             .names{
@@ -130,6 +131,17 @@
                 align-items: center;
 
                 transition: transform 0.5s, box-shadow 0.5s;
+
+                button{
+                    background-color: rgba(0, 0, 0, 0);
+                    border-radius: 50%;
+                    height: 100%;
+                    width: 100%;
+                    border: none;
+                    color: $primary_color;
+                    font-size: $card_heading;
+                    cursor: pointer;
+                }
                 
                 &:hover{
                     transform: scale(1.2);
@@ -147,11 +159,12 @@
                 
                 right: calc(100% - 130px);
                 top: calc(100% - 120px);
-
                 z-index: -1;
                 img{
                     height: 176px;
                     width: 176px;
+                    border-radius: 0px;
+
                     
                 }
             }

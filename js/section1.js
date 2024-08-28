@@ -17,6 +17,6 @@ function contact_button() {
             for (const child of contact[0].children) {
                 child.style.color = "white";
             }
-        }, 2000)
+        }, 3000)
     }, 2000)
 }

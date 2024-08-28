@@ -482,16 +482,18 @@
   max-width: 970px;
   margin-left: 1.05vw;
   margin-right: 1.05vw;
-  border-radius: 30px;
+  border-radius: 50px;
   position: relative;
   z-index: 47;
+  cursor: pointer;
 }
 .section3 .slides .slide .inner {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 30px;
+  border-radius: 50px;
   position: relative;
+  cursor: auto;
 }
 .section3 .slides .slide .inner img {
   height: 544px;
@@ -521,6 +523,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: auto;
 }
 .section3 .slides .slide .text .heading {
   font-size: min(40px, 15vw);
@@ -584,6 +587,29 @@
     --progress: 93;
   }
 }
+/* Apply animation based on class */
+.animate-on-scroll {
+  --progress: 0; /* Initial progress */
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.animate-on-scroll.animate-42 {
+  animation: progress-animation_42;
+}
+
+.animate-on-scroll.animate-73 {
+  animation: progress-animation_73;
+}
+
+.animate-on-scroll.animate-85 {
+  animation: progress-animation_85;
+}
+
+.animate-on-scroll.animate-93 {
+  animation: progress-animation_93;
+}
+
 .circular-progress {
   --size: 250px;
   --half-size: calc(var(--size) / 2);
@@ -736,6 +762,7 @@
   max-height: 592px;
   width: 25.7vw;
   height: 42vw;
+  border-radius: 30px;
 }
 .section5 .cards .card .names {
   position: absolute;
@@ -786,6 +813,16 @@
   align-items: center;
   transition: transform 0.5s, box-shadow 0.5s;
 }
+.section5 .cards .card .buttons button {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  border: none;
+  color: #DD514C;
+  font-size: min(24px, 1.66vw);
+  cursor: pointer;
+}
 .section5 .cards .card .buttons:hover {
   transform: scale(1.2);
   box-shadow: 3px 3px 10px black;
@@ -802,6 +839,7 @@
 .section5 .cards .card .dots img {
   height: 176px;
   width: 176px;
+  border-radius: 0px;
 }
 .section5 .cards .card:nth-child(1) {
   margin-right: 2vw;

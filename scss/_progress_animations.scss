@@ -1,35 +1,59 @@
 @keyframes progress-animation_42 {
-    from {
-      --progress: 0;
-    }
-    to {
-      --progress: 42;
-    }
+  from {
+    --progress: 0;
   }
+  to {
+    --progress: 42;
+  }
+}
 
-  @keyframes progress-animation_73 {
-    from {
-      --progress: 0;
-    }
-    to {
-      --progress: 73;
-    }
+@keyframes progress-animation_73 {
+  from {
+    --progress: 0;
   }
+  to {
+    --progress: 73;
+  }
+}
 
-  @keyframes progress-animation_85 {
-    from {
-      --progress: 0;
-    }
-    to {
-      --progress: 85;
-    }
+@keyframes progress-animation_85 {
+  from {
+    --progress: 0;
   }
+  to {
+    --progress: 85;
+  }
+}
 
-  @keyframes progress-animation_93 {
-    from {
-      --progress: 0;
-    }
-    to {
-      --progress: 93;
-    }
+@keyframes progress-animation_93 {
+  from {
+    --progress: 0;
   }
+  to {
+    --progress: 93;
+  }
+}
+
+/* Apply animation based on class */
+.animate-on-scroll {
+  --progress: 0; /* Initial progress */
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.animate-on-scroll.animate-42 {
+  animation: progress-animation_42;
+}
+
+.animate-on-scroll.animate-73 {
+  animation: progress-animation_73;
+}
+
+.animate-on-scroll.animate-85 {
+  animation: progress-animation_85;
+}
+
+.animate-on-scroll.animate-93 {
+  animation: progress-animation_93;
+}
+

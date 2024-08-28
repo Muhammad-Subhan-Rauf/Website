@@ -173,12 +173,14 @@
 
 
             <div class="slide">
-                <img src="/images/slide2.png" alt="City Block">
+                <img src="/images/slide2.png" alt="City Block" onclick="left_image_click()" data-heading="City Block"
+                    data-text="Building Design">
             </div>
 
             <div class="slide">
                 <div class="inner">
-                    <img src="/images/slide1.png" alt="Grey and Red Building">
+                    <img src="/images/slide1.png" alt="Grey and Red Building" data-heading="Beach House"
+                        data-text="Interior Design">
                 </div>
                 <div class="text" title="Project">
                     <div class="heading">
@@ -193,61 +195,50 @@
             </div>
 
             <div class="slide">
-                <img src="/images/slide3.png" alt="City Block">
+                <img src="/images/slide3.png" alt="City Block" onclick="right_image_click()" data-heading="City Block"
+                    data-text="External Design">
             </div>
         </div>
     </div>
 
 
     <div class="section4">
-        <div class="circle_prog" id="one">
-            <svg width="170" height="170" viewBox="0 0 250 250" class="circular-progress" style="--progress: 42;"
-                id="four2">
-
+        <div class="circle_prog animate-on-scroll" id="one" data-progress="42">
+            <svg width="170" height="170" viewBox="0 0 250 250" class="circular-progress">
                 <circle class="bg"></circle>
                 <circle class="fg"></circle>
             </svg>
-
             <div class="percentage" title="Architectural">42%</div>
             <div class="desc" title="Architectural">Architectural</div>
-
-
         </div>
-        <div class="circle_prog" id="two">
-            <svg width="170" height="170" viewBox="0 0 250 250" class="circular-progress" style="--progress: 73;"
-                id="seven3">
 
+        <div class="circle_prog animate-on-scroll" id="two" data-progress="73">
+            <svg width="170" height="170" viewBox="0 0 250 250" class="circular-progress">
                 <circle class="bg"></circle>
                 <circle class="fg"></circle>
             </svg>
-
             <div class="percentage" title="Construction">73%</div>
             <div class="desc" title="Construction">Construction</div>
         </div>
 
-        <div class="circle_prog" id="three">
-            <svg width="170" height="170" viewBox="0 0 250 250" class="circular-progress" style="--progress: 85;"
-                id="eight5">
-
+        <div class="circle_prog animate-on-scroll" id="three" data-progress="85">
+            <svg width="170" height="170" viewBox="0 0 250 250" class="circular-progress">
                 <circle class="bg"></circle>
                 <circle class="fg"></circle>
             </svg>
-
             <div class="percentage" title="Interior">85%</div>
             <div class="desc" title="Interior">Interior</div>
         </div>
 
-        <div class="circle_prog" id="four">
-            <svg width="170" height="170" viewBox="0 0 250 250" class="circular-progress" style="--progress: 93;"
-                id="nine3">
-
+        <div class="circle_prog animate-on-scroll" id="four" data-progress="93">
+            <svg width="170" height="170" viewBox="0 0 250 250" class="circular-progress">
                 <circle class="bg"></circle>
                 <circle class="fg"></circle>
             </svg>
-
             <div class="percentage" title="Architectural">93%</div>
             <div class="desc" title="Architectural">Architectural</div>
         </div>
+
 
     </div>
 
@@ -259,7 +250,7 @@
 
         <div class="cards">
             <div class="card">
-                <img src="/images/dude1.png" alt="Person">
+                <img src="/images/dude1.png" alt="Person" data-name="Tamas Bunce" data-job="Architect Designer">
                 <div class="names">
                     <div class="text" title="Architect Designer">
                         <div class="heading">
@@ -274,24 +265,28 @@
                 <div class="dots"><img src="images/dots.png" alt="" id="dot"></div>
 
 
-                <a href="#">
-                    <div class="buttons">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </div>
-                </a>
 
-                <a href="#">
-                    <div class="buttons" id="right">
+                <div class="buttons">
+                    <button onclick="left_arrow_5()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </div>
+
+
+
+                <div class="buttons" id="right">
+                    <button onclick="right_arrow_5()">
                         <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </a>
+                    </button>
+                </div>
+
 
 
             </div>
 
 
             <div class="card">
-                <img src="/images/dude2.png" alt="Person">
+                <img src="/images/dude2.png" alt="Person" data-name="Jafaris Long" data-job="Architect Designer">
                 <div class="names">
                     <div class="text" title="Architect Designer">
                         <div class="heading">
@@ -302,6 +297,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="card" style="display: none;">
+                <img src="/images/dude3.jpeg" alt="Person" data-name="Matt Rife" data-job="Marketing">
+            </div>
+
+            <div class="card" style="display: none;">
+                <img src="/images/dude4.jpg" alt="Person" data-name="Alan Rover" data-job="CEO">
             </div>
         </div>
     </div>
@@ -582,6 +585,10 @@
 
     <script src="js/section1.js"></script>
     <script src="js/section2.js"></script>
+    <script src="js/section3.js"></script>
+    <script src="js/progress_bar.js"></script>
+    <script src="js/section5.js"></script>
+
 
 </body>
 
