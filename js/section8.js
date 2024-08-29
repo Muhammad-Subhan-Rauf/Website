@@ -41,7 +41,10 @@ function right_arrow_8() {
     person.innerHTML = reviewers[index]
     source.innerHTML = "Google"
 
-    image.setAttribute("src", images[index])
+    setTimeout(() => {
+        image.setAttribute("src", images[index])
+
+    }, 250)
 
     var screenWidth = window.screen.width;
 
@@ -49,8 +52,8 @@ function right_arrow_8() {
         if (screenWidth >= 768) {
             review_box.style.transform = "translate(-90%)"
             image_box.style.transform = "translate(70%)"
-            flip_flag = true;
         }
+        flip_flag = true;
 
         image.style.objectFit = "cover";
         image.style.objectPosition = "100% 50%"
@@ -59,8 +62,8 @@ function right_arrow_8() {
         if (screenWidth >= 768) {
             review_box.style.transform = "translate(0%)"
             image_box.style.transform = "translate(0%)"
-            flip_flag = false;
         }
+        flip_flag = false;
 
         image.style.objectFit = "cover";
         image.style.objectPosition = "0% 0%"
@@ -91,7 +94,10 @@ function left_arrow_8(){
     person.innerHTML = reviewers[index]
     source.innerHTML = "Google"
 
-    image.setAttribute("src", images[index])
+    setTimeout(() => {
+        image.setAttribute("src", images[index])
+
+    }, 250)
 
     var screenWidth = window.screen.width;
 
