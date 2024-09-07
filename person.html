@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Project
+    </title>
+
+    <script src="https://kit.fontawesome.com/cf423508f1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wdth,wght@100..125,200..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body style="background-color: #F7F2E2; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+    <div class="navbar_other">
+        <div class="logo_icons">
+
+            <div class="icon">
+                <button onclick="applyBlur()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="logo" title="ARCH Companies">
+                ARCH
+            </div>
+        </div>
+
+        <div class="social_nav">
+            <a href="">
+                <div class="icon" title="Facebook.com"><i class="fa-brands fa-facebook-f"></i></div>
+            </a>
+            <a href="">
+                <div class="icon" title="X.com"><i class="fa-brands fa-twitter"></i></div>
+            </a>
+            <a href="">
+                <div class="icon" title="Instagram.com"><i class="fa-brands fa-instagram"></i></div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+        <div class="internal_nav">
+            <a href="#section1">About Us</a>
+            <a href="#section2">Services</a>
+            <a href="#section3">Portfolio</a>
+            <a href="#section5">Employees</a>
+            <a href="#section6">Achievements</a>
+            <a href="#section7">Blog</a>
+            <a href="#section8">Reviews</a>
+        </div>
+        <div class="user_section">
+            <a href="login.html">Login</a>
+            <a href="#section1">Sign Up</a>
+            <a href="#section1">Admin Panel</a>
+
+        </div>
+    </div>
+
+
+    <div class="user_card">
+        
+        <div class="profile_picture">
+            <img src="assets/user_images/placeholder.png" alt="" width="200px" height="200px">
+        </div>
+
+        <div class="user_information" >
+            <div class="user_details" >
+                <h2 id="user_name">John Doe</h2>
+                <p id="user_email">Email: john.doe@example.com</p>
+                <p id="user_ID">ID:</p>
+            </div>
+
+            <div class="user_details_edit" style="display: none;">
+                <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+                    <input type="text" placeholder="First Name" id="edit_Fname_field">
+                    <input type="text" placeholder="Last Name" id="edit_Lname_field">
+                    <input type="text" placeholder="Email" id="edit_email_field">
+                    <input type="password" placeholder="Password" id="edit_pass_field">
+                    <button type="button" id="uploadButton" onclick="update_user_data()">Update Data</button>
+                </form>
+            </div>
+            
+            <div class="buttons">
+                <button id="edit_data" onclick="fill_default_values()">Edit Data</button>
+                <button id="delete_data">Delete Account</button>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/data_read.js"></script>
+
+    <script src="js/section1.js"></script>
+    <script src="js/section2.js"></script>
+    <script src="js/section3.js"></script>
+    <script src="js/progress_bar.js"></script>
+    <script src="js/section5.js"></script>
+    <script src="js/section7.js"></script>
+    <script src="js/section8.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/person.js"></script>
+</body>
+
+</html>

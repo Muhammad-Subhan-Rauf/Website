@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Project
+    </title>
+
+    <script src="https://kit.fontawesome.com/cf423508f1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wdth,wght@100..125,200..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body style="background-color: #F7F2E2; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+    <div class="navbar_other">
+        <div class="logo_icons">
+
+            <div class="icon">
+                <button onclick="applyBlur()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="logo" title="ARCH Companies">
+                ARCH
+            </div>
+        </div>
+
+        <div class="social_nav">
+            <a href="">
+                <div class="icon" title="Facebook.com"><i class="fa-brands fa-facebook-f"></i></div>
+            </a>
+            <a href="">
+                <div class="icon" title="X.com"><i class="fa-brands fa-twitter"></i></div>
+            </a>
+            <a href="">
+                <div class="icon" title="Instagram.com"><i class="fa-brands fa-instagram"></i></div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+        <div class="internal_nav">
+            <a href="#section1">About Us</a>
+            <a href="#section2">Services</a>
+            <a href="#section3">Portfolio</a>
+            <a href="#section5">Employees</a>
+            <a href="#section6">Achievements</a>
+            <a href="#section7">Blog</a>
+            <a href="#section8">Reviews</a>
+        </div>
+        <div class="user_section">
+            <a href="login.html">Login</a>
+            <a href="#section1">Sign Up</a>
+            <a href="#section1">Admin Panel</a>
+
+        </div>
+    </div>
+
+
+    <div class="login_form">
+        <label for="user_id">ID:</label>
+        <input type="text" placeholder="User ID" id="user_id">
+
+        <label for="user_pass">Password:</label>
+        <input type="password" placeholder="Password" id="user_pass">
+
+        <div class="incorrect_password" style="display: none; color: yellow;">
+            incorrect password or login. TRY AGAIN
+        </div>
+
+        <button onclick="call_authenticator()">Login</button>
+        <button>Sign Up</button>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/data_read.js"></script>
+
+    <script src="js/section1.js"></script>
+    <script src="js/section2.js"></script>
+    <script src="js/section3.js"></script>
+    <script src="js/progress_bar.js"></script>
+    <script src="js/section5.js"></script>
+    <script src="js/section7.js"></script>
+    <script src="js/section8.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

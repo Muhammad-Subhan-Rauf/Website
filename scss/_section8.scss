@@ -135,13 +135,7 @@
             object-position: 0% 0%;
         }
 
-        &::before{
-            content: '';
-            background: url('images/dots.png');
-
-            top:0px;
-            left:-100px;
-        }    
+          
     }
     
 
@@ -153,7 +147,7 @@
         border-radius: 40px;
         margin-left: -100px;
 
-        z-index: 48;
+        z-index: 48; 
 
         
         

@@ -63,7 +63,10 @@ function remove_listener(){
 
 function click_event(event) {
     const sidebar = document.querySelector('.sidebar');
-    const navbar = document.querySelector('.navbar');
+    let navbar = document.querySelector('.navbar');
+    const navbar_login = document.querySelector('.navbar_other');
+    
+    navbar = (!navbar) ? navbar_login: navbar;
 
     if (!sidebar.contains(event.target) && !navbar.contains(event.target)) {
         applyBlur(true);
